@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'inter',sans-serif;
+    /* overflow-x: hidden; */
+    
+}
+.nav1{
+    display: flex;
+    height: 70px;
+    width: 100vw;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+    
+}
+.input_text{
+    width: 500px;
+    height: 40px;
+    background-color: #f0f5ff;
+    border: none;
+    border-radius: 10px;
+}
+.login{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.seller{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.option{
+    display: flex;
+    align-items: center;
+}
+
+
+/* nav_2 started */
+
+
+.nav2{
+    width: 100vw;
+    height: 170px;
+    background-color: #f1f2f4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav2_content{
+    display: flex;
+    width: 98vw;
+    height: 150px;
+    background-color: white;
+    margin-top: 10px;
+    justify-content: space-around;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+img:not(.logog){
+    width: 65px;
+    height: 65px;
+}
+
+.grocery .mobiles .fashion .electronics .home .applines .travel .beauty .two_weelers{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.text_model{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.search :placeholder-shown{
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+
+.cards-section{
+    padding: 50px;
+    display: flex;
+}
+.content-part{
+    min-width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.card{
+    width: 200px;
+    position: relative;
+    border: 1px solid gray;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.card .image img{
+    width: 100%;
+    height: 200px;
+}
+.card .heart{
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+    color: gray;
+}
+.card .heart i:hover{
+    color: red;
+    transition: all .3s ease-in-out;
+}
+.rating{
+    background-color: green;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+}
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5px;
+}
+.rating-container img{
+    height: 20px;
+}
+.price{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.new-price{
+    
+    font-weight: bolder;
+}
+.original-price{
+
+    text-decoration: line-through;
+    color: gray;
+}
+.price-off{
+    
+    font-weight: bolder;
+    color: green;
+}
+
+.sort{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+}
+/* .sort button{
+    padding: 5px;
+} */
+
+
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: auto;
+    padding: 2px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+   }
+   
+   button:active,
+   button:hover {
+    outline: 0;
+   }
+   
+   button span {
+    background-color: rgb(5, 6, 45);
+    padding: 8px 8px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+   }
+   
+   button:hover span {
+    background: none;
+   }
+   
+   button:active {
+    transform: scale(0.9);
+   }
+
+   .bolder{
+    font-weight: bolder;
+   }
+   .smaller{
+    font-size: 12px;
+    color: gray;
+   }
+   .item-price input{
+    width: 80px;
+   }
+
+   .flip-check{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   }
+.rating-tab{
+    display: flex;
+    flex-direction: column;
+}
+  

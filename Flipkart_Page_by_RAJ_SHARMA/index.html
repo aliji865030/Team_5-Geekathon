@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart_Nav</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://kit.fontawesome.com/d846ac8a58.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="nav1">
+      <div class="logo">
+        <img
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+          alt=""
+          class="logog"
+        />
+      </div>
+      <div class="search">
+        <form action="">
+          <input
+            type="text"
+            class="input_text"
+            placeholder=" Search for Products,Brands and more"
+          />
+        </form>
+      </div>
+      <div class="login">
+        <span class="material-symbols-outlined"> account_circle </span>
+
+        <p>Login</p>
+        <span class="material-symbols-outlined"> expand_more </span>
+      </div>
+      <div class="cart">
+        <span class="material-symbols-outlined"> shopping_cart </span>
+        <p>Cart</p>
+      </div>
+      <div class="seller">
+        <span class="material-symbols-outlined"> storefront </span>
+
+        <p>Become a Seller</p>
+      </div>
+      <div class="option">
+        <span class="material-symbols-outlined"> more_vert </span>
+      </div>
+    </div>
+
+    <div class="nav2">
+      <div class="nav2_content">
+        <div class="grocery">
+          <img
+            src="https://rukminim1.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100"
+            alt=""
+          />
+
+          <p>Grocery</p>
+        </div>
+
+        <div class="mobiles">
+          <img
+            src="https://rukminim1.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100"
+            alt=""
+          />
+
+          <p>Mobiles</p>
+        </div>
+
+        <div class="fashion">
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/0d75b34f7d8fbcb3.png?q=100"
+            alt=""
+          />
+
+          <div class="text_model">
+            <p>Fashion</p>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+        </div>
+
+        <div class="electronics">
+          <img
+            src="https://rukminim1.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100"
+            alt=""
+          />
+
+          <div class="text_model">
+            <p>Electronics</p>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+        </div>
+
+        <div class="home">
+          <img
+            src="https://rukminim1.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100"
+            alt=""
+          />
+
+          <div class="text_model">
+            <p>
+              Home & <br />
+              Furniture
+            </p>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+        </div>
+
+        <div class="applines">
+          <img
+            src="https://rukminim1.flixcart.com/flap/96/96/image/0ff199d1bd27eb98.png?q=100"
+            alt=""
+          />
+
+          <p>Appliances</p>
+        </div>
+
+        <div class="travel">
+          <img
+            src="https://rukminim1.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100"
+            alt=""
+          />
+
+          <p>Travel</p>
+        </div>
+
+        <div class="beauty">
+          <img
+            src="https://rukminim1.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100"
+            alt=""
+          />
+
+          <div class="text_model">
+            <p>
+              Beauty,Toys & <br />
+              More
+            </p>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+        </div>
+
+        <div class="two_weelers">
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100"
+            alt=""
+          />
+
+          <div class="text_model">
+            <p>
+              Two <br />
+
+              Weelers
+            </p>
+
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+
+
+  
+
+
+
+  <div class="cards-section">
+
+   <div class="content-part">
+    
+    <p>price</p>
+    <span class="smaller">From 169 to 849</span>
+    <div class="item-price">
+
+        <input type="number" placeholder="min" class="min-price">
+        <span>to</span>
+        <input type="number" placeholder="max" class="max-price">
+    </div>
+    <span class="bolder"><button>
+        <span class="text" onclick="filterByPrice()">Filter</span>
+        </button>
+    </span>
+
+    <div class="flip-check">
+        <input type="checkbox" onclick="filterByFlipkart()" class="flip-check">
+    <label for=""><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="" style="height: 20px;"></img></label>
+    </div>
+
+
+    <div class="flip-check">
+        <input type="checkbox" onclick="nocostemi()" class="flip-check">
+    <label for="">No Cost EMI</label>
+    </div>
+
+    <p>CUSTOMER RATING</p>
+    <div class="rating-tab">
+        <div class="flip-check">
+            <input type="checkbox" onclick="s4()" class="flip-check">
+        <label for="">4 <i class="fa-solid fa-star" style="color: rgb(0, 0, 0);"></i> & above</label>
+        </div>
+        <div class="flip-check">
+            <input type="checkbox" onclick="s3()" class="flip-check">
+        <label for="">3 <i class="fa-solid fa-star" style="color: rgb(0, 0, 0);"></i> & above</label>
+        </div>
+        <div class="flip-check">
+            <input type="checkbox" onclick="s2()" class="flip-check">
+        <label for="">2 <i class="fa-solid fa-star" style="color: rgb(0, 0, 0);"></i> & above</label>
+        </div>
+        <div class="flip-check">
+            <input type="checkbox" onclick="s1()" class="flip-check">
+        <label for="">1 <i class="fa-solid fa-star" style="color: rgb(0, 0, 0);"></i> & above</label>
+        </div>
+    </div>
+
+
+
+
+   </div>
+   <div class="card-container-perent">
+    <div class="sort">
+        <span class="sort-by">Sort By</span>
+        <span>
+            <button>
+            <span class="text" onclick="sortbypopularity()">Popularity</span>
+            </button>
+        </span>
+        <span>
+            <button>
+                <span class="text" onclick="sortByPriceLtoH()">Price-Low to High</span>
+            </button>
+        </span>
+        <span>
+            <button>
+                <span class="text" onclick="sortByPriceHtoL()">Price-High to Low</span>
+            </button>
+        </span>
+
+        
+    </div>
+    <div class="card-container">
+
+    </div>
+    <!-- <div class="card">
+        <div class="heart">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1520931061294-db3e762a9273?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxwcm9kdWN0fGVufDB8fDB8fHww" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>product 1</p>
+            </div>
+            <div class="rating-container">
+               <span class="rating">4.5 <i class="fa-solid fa-star" style="color: rgb(255, 255, 255);"></i></span>
+
+               <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="">
+            </div>
+            <div class="price">
+                <span class="new-price">
+                    $233
+                </span>
+                <span class="original-price">
+                    $255
+                </span>
+                <span class="price-off">
+                    80% off
+                </span>
+            </div>
+        </div>
+    </div> -->
+   </div>
+  </div>
+
+
+  <script src="./data.js"></script>
+  <script src="./script.js"></script>
+  </body>
+</html>
