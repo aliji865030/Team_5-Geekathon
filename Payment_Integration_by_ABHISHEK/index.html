@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Integration</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-left-alt.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-bag.css' rel='stylesheet'>
@@ -28,6 +27,7 @@
         </svg>
         </div>
     <div id="main-container">
+        <h1 id="heading-mobile">Payment Integration Demo</h1>
             <div id="nav-bar">
                 <div id="menu"><button id="menu-button"><i class="gg-menu-left-alt"></i></button>
                     <div id="dropdown-menu">
@@ -51,7 +51,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-               <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+               <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-angela-roma-7479825.jpg" alt="Product Image">
@@ -65,7 +65,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-ron-lach-9594422.jpg" alt="Product Image">
@@ -79,7 +79,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-pixabay-65676.jpg" alt="Product Image">
@@ -93,7 +93,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-andrea-piacquadio-3755706.jpg" alt="Product Image">
@@ -107,7 +107,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-tamar-willoughby-951889.jpg" alt="Product Image">
@@ -121,7 +121,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-rafa-de-345415.jpg" alt="Product Image">
@@ -135,7 +135,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-mnz-1670766.jpg" alt="Product Image">
@@ -149,7 +149,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
             <div id="product">
                 <img src="assets/pexels-fernando-arcos-190819.jpg" alt="Product Image">
@@ -163,7 +163,7 @@
                     <p id="quantity-value"></p>
                   </div>
                 <button id="add-to-cart">Add to Cart</button>
-                <a href ="#heading"><button id="go-to-cart">Go To Cart</button></a>
+                <a href ="#nav-bar"><button id="go-to-cart">Go To Cart</button></a>
             </div>
         </div>
         <div id="cart">
@@ -210,9 +210,7 @@ document.getElementById("checkout").onclick =async function(e){
     
     "order_id": orderData.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
     "handler": function (response){
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature);
+        alert("Your Payment ID :" + response.razorpay_payment_id);
     },
     
 };
