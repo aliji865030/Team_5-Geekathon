@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minesweeper Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="s.js"></script>
+    </head>
+
+    <body>
+        <h1>💣 MINESWEEPER 💣</h1>
+    <div class="grid"></div>
+    <div class="left-container">
+      <h2>How To Play / Rules</h2>
+      <ol>
+      <li>The game board is a grid of squares, some of which contain hidden mines.</li>
+      <li>The player clicks on a square to reveal what's underneath.</li>
+      <li>If the square contains a mine, the game is over and the player loses.</li>
+      <li>If the square doesn't contain a mine, a number will be displayed indicating how many of its neighboring squares contain mines.</li>
+      <li>The player can use this information to deduce which squares are safe to click on and which ones contain mines.</li>
+      <li>The player can also mark squares that they think contain mines, to help keep track of which squares are dangerous.</li>
+      <li>The game is won when all non-mine squares are uncovered.</li>
+</ol>
+        <h1>Mines: <span id="mines-count">0</span></h1>
+        <div id="board"></div>
+        <br>
+        <button class="reset">Reset</button>
+        <button id="flag-button">🚩</button>
+        <button class="mines-left">Mines Left: 0</button>
+   
+        <button class="helpButton">Help</button>
+      
+        <button class="resetButton">New Game</button>
+    </body>
+</html>
