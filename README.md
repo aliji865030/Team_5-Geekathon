@@ -15,7 +15,7 @@
 
 ## Robin  [Trello Clone](https://troller-clone.vercel.app/)
 
-## Himanshu  [Mine Game](https://github.com/aliji865030/Team_5-Geekathon/tree/main/Chrome_Extention_by_ABBAS_ALI)
+## Himanshu  [Mine Game](https://himanshu0018.github.io/MINE_GAME)
 
 
 
