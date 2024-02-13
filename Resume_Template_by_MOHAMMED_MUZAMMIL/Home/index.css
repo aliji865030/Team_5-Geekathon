@@ -1,0 +1,324 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Style the navigation bar */
+.navdiv {
+  background: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  transition: box-shadow 0.3s ease;
+}
+.logodiv,
+.navcomponents ul,
+.signdiv {
+  background-color: #fff;
+  border-radius: 33px;
+  height: 2.3rem;
+}
+
+.logodiv {
+  display: flex;
+  width: max-content;
+  padding: 2px 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Style the navigation components */
+.navcomponents ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 20px;
+}
+.navcomponents li {
+  margin-right: 20px;
+  padding: 8px 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.navcomponents li:hover {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+}
+
+.signdiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 20px;
+}
+.signbtns {
+  padding: 8px 16px;
+  background-color: #27ae60;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+.signbtns:hover {
+  background-color: #219145;
+}
+/* Style the navigation bar */
+.logodiv,
+.navcomponents ul,
+.signdiv {
+  background-color: #fff;
+  border-radius: 33px;
+  height: 2.3rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.navdiv.fixed {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logodiv.fixed,
+.navcomponents ul.fixed,
+.signdiv.fixed {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/* nav end*/
+
+/*main
+/* Apply styles to the main section */
+/* Main styles */
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+/* Style the main-info div */
+.main-info {
+  flex: 1;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Style the heading elements in main-info */
+.main-info h3 {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+.main-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.main-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+/* Style the paragraph in main-info */
+.main-info p {
+  margin-top: 10px;
+}
+
+/* Style the main-image div */
+.main-image {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2; /* Higher z-index for main-image */
+  position: relative; /* Ensure positioning context */
+}
+
+/* Style the image inside main-image */
+.main-image img {
+  height: 100%; /* Ensure the image covers the entire height of the container */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  align-self: center;
+  animation: imageAppear 1s ease-in-out; /* Initial animation */
+}
+
+/* Keyframes for the animation */
+@keyframes imageAppear {
+  from {
+    transform: translateY(100%); /* Move image below the container */
+  }
+  to {
+    transform: translateY(0); /* Move image to its original position */
+  }
+}
+/* Apply styles to the templates section */
+.templates {
+  height: 100vh;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the container */
+.container {
+  text-align: center;
+}
+
+/* Style the heading elements */
+.container h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.container h4 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Style the template cards */
+.templates-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.template-card {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.template-card:hover {
+  transform: scale(1.05);
+}
+
+.template-card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.template-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Style the button */
+button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #219145;
+}
+/* Apply styles to the footer */
+footer {
+  background-color: #282c36;
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Center the content in the footer */
+footer div {
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Style the tabs */
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.tab {
+  margin-right: 20px;
+  max-width: 3000px;
+  width: 300px;
+  height: 200px;
+}
+
+/* Style the tab headings */
+.tab h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Style the tab lists */
+.tab ul {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.tab ul li {
+  margin-bottom: 5px;
+}
+
+.tab a {
+  text-decoration: none;
+  color: #bdbdbd;
+  transition: color 0.3s ease-in-out;
+}
+
+.tab a:hover {
+  color: #fff;
+}
+/* Style the copyright info */
+.copyright-info {
+  text-align: center;
+  margin-top: 30px;
+  color: #bdbdbd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .vision-info,
+  .copyright-info {
+    margin-right: 0;
+  }
+}
